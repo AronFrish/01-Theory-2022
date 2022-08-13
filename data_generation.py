@@ -1,5 +1,5 @@
 #importing data from data.txt
-f = open("data.txt", "r")
+f = open("progress.txt", "r")
 g = f.read()
 if (len(g)==0) :
     zeroes = 0
@@ -16,7 +16,7 @@ f.close()
 
 #save data to data.txt
 def save() :
-    f = open("data.txt", "w")
+    f = open("progress.txt", "w")
     f.write("zeroes:" + str(zeroes) + ", ones:" + str(ones) + ", number:" + str(n))
     f.close()
 
