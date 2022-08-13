@@ -27,11 +27,10 @@ def save_data_point() :
 #save data to data.txt
 
 #running calculations
-while (1) :
+while (n<10000000000) :
     z = str(n)
     zeroes+=2*z.count('0')
     ones+=2*z.count('1')
-    print(n, ones/zeroes)
     n+=1
     if (n%10000==0) :
         save_data_point()
